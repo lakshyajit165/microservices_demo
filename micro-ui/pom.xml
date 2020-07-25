@@ -78,7 +78,7 @@
 							<outputDirectory>${basedir}/src/main/resources/static</outputDirectory>
 							<resources>
 								<resource>
-									<directory>${basedir}/frontend/microfrontend/dist</directory>
+									<directory>${basedir}/frontend/dist</directory>
 								</resource>
 							</resources>
 						</configuration>

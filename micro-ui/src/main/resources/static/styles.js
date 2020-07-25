@@ -486,8 +486,8 @@ module.exports = content.locals || {};
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/elkay/workspace/microservices/micro-ui/frontend/microfrontend/src/styles.css */"./src/styles.css");
-module.exports = __webpack_require__(/*! /home/elkay/workspace/microservices/micro-ui/frontend/microfrontend/node_modules/bootstrap/dist/css/bootstrap.css */"./node_modules/bootstrap/dist/css/bootstrap.css");
+__webpack_require__(/*! /home/elkay/workspace/microservices/micro-ui/frontend/src/styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! /home/elkay/workspace/microservices/micro-ui/frontend/node_modules/bootstrap/dist/css/bootstrap.css */"./node_modules/bootstrap/dist/css/bootstrap.css");
 
 
 /***/ })
