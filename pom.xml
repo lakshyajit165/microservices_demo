@@ -47,6 +47,7 @@
     <module>gateway</module>
     <module>dashboard-service</module>
     <module>pricing-service</module>
+    <module>micro-ui</module>
   </modules>
 
 </project>
