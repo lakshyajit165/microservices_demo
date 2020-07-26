@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MicroResponseService } from '../../service/micro-response.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +8,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  result: string;
+  res: string = 'res';
+  constructor(
+    private service: MicroResponseService
+  ) { }
 
   ngOnInit(): void {
+   this.service.getDashBoard().subscribe(res => {
+    //  console.log(res);
+    this.result = res[this.res];
+   });
+
+  //  this.service.getDashBoardDefault().subscribe(res => {
+  //    console.log(res);
+  //  })
   }
 
 }
