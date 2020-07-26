@@ -7,7 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @SpringBootApplication
 @EnableEurekaClient
-@RequestMapping("/")
 public class MicroUiApplication {
 
 	public static void main(String[] args) {

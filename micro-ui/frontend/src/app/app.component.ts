@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'microfrontend';
+
+  constructor(
+  private router: Router
+  ) {
+  }
+
+  routeFunction(routePath: string) {
+      this.router.navigate([ routePath ]);
+    }
+
 }
