@@ -1,14 +1,10 @@
 #!/bin/bash
 
-# cd ./discovery
-# mvn clean package -DskipTests
-# nohup java -jar ./target/discovery-1.0.0-SNAPSHOT.jar > ../server_log.txt 2>&1 &
-# echo $! > ../pid.file
-
-# cd ../gateway
-# mvn clean package -DskipTests
-# nohup java -jar ./target/gateway-1.0.0-SNAPSHOT.jar >> ../server_log.txt 2>&1 &
-# echo $! >> ../pid.file
+# $# checks for commandline arguments
+# No arguments => start all services
+# Example arguments => ./start_services.sh discovery dashboard-service
+# $! gives the pid of the last command
+# nohup runs a jar in the background
 
 if [ "$#" -eq 0 ]; then
 

@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# $# checks for commandline arguments
+# No arguments => stop all services
+# Example arguments => ./stop_services.sh discovery dashboard-service
+
+
 if [ "$#" -eq 0 ]; then
     echo "Stopping all services!";
     kill $(awk '{ print $1 }' ./pid.file);
